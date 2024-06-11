@@ -6,7 +6,7 @@ import SearchContext from "./context/SearchContext";
 import { useState } from "react";
 
 function App() {
-  const [searchText, setSearchText] = useState("man");
+  const [searchText, setSearchText] = useState("father");
   return (
     <SearchContext.Provider
       value={{ searchText: searchText, setSearchText: setSearchText }}

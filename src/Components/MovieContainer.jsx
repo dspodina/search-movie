@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import getMovies from "../Apis/getMovie";
+import getMovie from "../Apis/getMovie";
 import Movie from "./Movie";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -12,15 +12,18 @@ const MovieContainer = ({ searchText }) => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const data = await getMovies(searchText);
-        setMovies(data.results);
+        const data = await getMovie();
+        const filteredMovies = data.results.filter(movie =>
+          movie.title.toLowerCase().includes(searchText.toLowerCase())
+        );
+        setMovies(filteredMovies);
       } catch (err) {
         setError(err.message);
       }
     };
-
     fetchMovies();
   }, [searchText]);
+  
 
   return (
     <Container maxWidth="lg">

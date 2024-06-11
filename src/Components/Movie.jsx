@@ -76,6 +76,13 @@ const Movie = ({ movie }) => {
           </Typography>
         </Box>
         <Typography
+          variant="body1"
+          color="text.secondary"
+          sx={{ fontSize: "14px", marginBottom: "5px" }}
+        >
+          Release date: {movie.release_date}
+        </Typography>
+        <Typography
           sx={{
             fontSize: "16px",
             marginBottom: "10px",
@@ -85,13 +92,6 @@ const Movie = ({ movie }) => {
           }}
         >
           {truncate(movie.overview, 150)}
-        </Typography>
-        <Typography
-          variant="body1"
-          color="text.secondary"
-          sx={{ fontSize: "14px", marginBottom: "5px" }}
-        >
-          Release date: {movie.release_date}
         </Typography>
       </CardContent>
     </Card>

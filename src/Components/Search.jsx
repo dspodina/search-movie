@@ -6,14 +6,14 @@ import SearchContext from "../context/SearchContext";
 import Container from "@mui/material/Container";
 
 const Search = () => {
-  const [inputValue, setInputValue] = useState("man");
+  const [inputValue, setInputValue] = useState("father");
 
   const { setSearchText } = useContext(SearchContext);
 
   const submitHandler = (e) => {
     e.preventDefault();
     if (inputValue.trim() === "") {
-      return console.log(inputValue);
+      return;
     }
     setSearchText(inputValue);
     setInputValue("");
