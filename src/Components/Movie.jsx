@@ -17,7 +17,7 @@ const Movie = ({ movie }) => {
     <Card
       sx={{
         maxWidth: 380,
-        height: 580,
+        height: 680,
         backgroundColor: "#f8f8f8",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
@@ -26,7 +26,7 @@ const Movie = ({ movie }) => {
       <Box sx={{ position: "relative" }}>
         <CardMedia
           sx={{
-            height: 300,
+            height: 400,
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
           }}

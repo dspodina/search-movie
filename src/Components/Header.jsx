@@ -13,7 +13,7 @@ const Header = ({ title }) => {
           sx={{
             fontSize: "36px",
             fontWeight: "700",
-            margin: "20px 0 30px",
+            margin: "30px 0 40px",
             textTransform: "uppercase",
             fontFamily: '"Josefin Sans", sans-serif',
             backgroundImage: "var(--gradient)",
