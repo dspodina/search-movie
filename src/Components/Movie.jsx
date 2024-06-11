@@ -7,17 +7,11 @@ import Badge from "@mui/material/Badge";
 import Box from "@mui/material/Box";
 
 const Movie = ({ movie }) => {
-  const baseUrl = "https://image.tmdb.org/t/p/w500";
-
-  const truncate = (str, maxLength) => {
-    return str.length > maxLength ? str.substring(0, maxLength) + "..." : str;
-  };
-
   return (
     <Card
       sx={{
         maxWidth: 380,
-        height: 680,
+        height: 580,
         backgroundColor: "#f8f8f8",
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
@@ -26,14 +20,14 @@ const Movie = ({ movie }) => {
       <Box sx={{ position: "relative" }}>
         <CardMedia
           sx={{
-            height: 400,
+            height: 450,
             borderTopLeftRadius: "10px",
             borderTopRightRadius: "10px",
           }}
-          image={`${baseUrl}${movie.poster_path}`}
+          image={`${movie.Poster}`}
         />
         <Badge
-          badgeContent={movie.vote_average}
+          badgeContent={movie.Type}
           sx={{
             "& .MuiBadge-badge": {
               fontSize: "16px",
@@ -72,26 +66,15 @@ const Movie = ({ movie }) => {
               textTransform: "uppercase",
             }}
           >
-            {movie.title}
+            {movie.Title}
           </Typography>
         </Box>
         <Typography
           variant="body1"
           color="text.secondary"
-          sx={{ fontSize: "14px", marginBottom: "5px" }}
+          sx={{ fontSize: "13px", marginBottom: "5px" }}
         >
-          Release date: {movie.release_date}
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: "16px",
-            marginBottom: "10px",
-            color: "#555",
-            fontFamily: '"Merriweather Sans", sans-serif',
-            fontWeight: "200",
-          }}
-        >
-          {truncate(movie.overview, 150)}
+          Release date: {movie.Year}
         </Typography>
       </CardContent>
     </Card>

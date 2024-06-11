@@ -1,9 +1,11 @@
 import axios from "axios";
 
-const getMovie = async () => {
+const getMovie = async (value) => {
   try {
     const res = await axios.get(
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.VITE_SEARCH_MOVIE_KEY}`
+      `http://www.omdbapi.com/?apikey=${
+        import.meta.env.VITE_SEARCH_MOVIE_KEY
+      }&s=${value}&page=1`
     );
     if (res.status !== 200) {
       throw new Error(`HTTP error! Status: ${res.status}`);
