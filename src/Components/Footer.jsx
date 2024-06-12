@@ -45,7 +45,7 @@ const Footer = ({ footerText }) => {
         >
           <Button
             sx={{
-              color: "var(--blue-color)",
+              color: "var(--beige-color)",
               fontSize: "20px",
             }}
             href="https://github.com/dspodina"
@@ -56,7 +56,7 @@ const Footer = ({ footerText }) => {
           </Button>
           <Button
             sx={{
-              color: "var(--blue-color)",
+              color: "var(--beige-color)",
               fontSize: "20px",
             }}
             href="https://www.linkedin.com/in/daria-spodina"

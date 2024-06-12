@@ -60,7 +60,7 @@ const Search = () => {
           },
           "& .MuiInputLabel-root": {
             color: "var(--beige-color)",
-            fontSize: "10px",
+            fontSize: "12px",
             textTransform: "uppercase",
             fontWeight: "400",
           },
@@ -72,6 +72,7 @@ const Search = () => {
         sx={{
           color: "var(--beige-color)",
           background: "var(--gradient)",
+          fontSize: "14px",
           height: "46px",
           fontWeight: "400",
           "&:hover": {
