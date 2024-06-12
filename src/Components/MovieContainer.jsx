@@ -23,7 +23,7 @@ const MovieContainer = ({ searchText }) => {
   }, [searchText]);
 
   return (
-    <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
+    <Container maxWidth="lg" sx={{ paddingBottom: "80px" }}>
       {error && <Typography variant="body1" color="error">{error}</Typography>}
       <Grid container spacing={2}>
         {movies.length > 0 ? (
