@@ -30,7 +30,7 @@ const Footer = ({ footerText }) => {
             fontSize: "16px",
             fontWeight: "200",
             fontFamily: "Merriweather Sans",
-            color: "var(--beige-color)",
+            color: "var(--blue-color)",
             m: 0,
           }}
         >
@@ -45,7 +45,7 @@ const Footer = ({ footerText }) => {
         >
           <Button
             sx={{
-              color: "var(--beige-color)",
+              color: "var(--blue-color)",
               fontSize: "20px",
             }}
             href="https://github.com/dspodina"
@@ -56,7 +56,7 @@ const Footer = ({ footerText }) => {
           </Button>
           <Button
             sx={{
-              color: "var(--beige-color)",
+              color: "var(--blue-color)",
               fontSize: "20px",
             }}
             href="https://www.linkedin.com/in/daria-spodina"

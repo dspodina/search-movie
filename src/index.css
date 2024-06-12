@@ -2,16 +2,16 @@
   font-family: "Merriweather Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --blue-color: #042441;
+  --blue-color: #051E39;
   --beige-color: #f6f4f2;
-  --light-blue-color: #0d9bbf;
+  --light-blue-color: #0ABAB5;
   --black-color: #282343;
   --gradient: linear-gradient(
     180deg,
     rgba(11, 107, 158, 1) 0%,
     rgba(11, 237, 210, 1) 100%
   );
-  background-color: #042441;
+  background-color: #051E39;
 }
 
 * {
