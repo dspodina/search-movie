@@ -4,15 +4,14 @@
   font-weight: 400;
   --blue-color: #042441;
   --beige-color: #f6f4f2;
-  --green-color: #09aea9;
+  --light-blue-color: #0d9bbf;
   --black-color: #282343;
-  --gradient: linear-gradient(180deg, rgba(11,107,158,1) 0%, rgba(11,237,210,1) 100%);
+  --gradient: linear-gradient(
+    180deg,
+    rgba(11, 107, 158, 1) 0%,
+    rgba(11, 237, 210, 1) 100%
+  );
   background-color: #042441;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -20,7 +19,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   min-height: 100vh;

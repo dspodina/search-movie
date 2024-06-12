@@ -16,7 +16,6 @@ const Search = () => {
     }
     setSearchText(value);
     setValue("");
-    console.log(value);
   };
 
   return (
@@ -38,28 +37,30 @@ const Search = () => {
         onChange={(e) => setValue(e.target.value)}
         sx={{
           borderRadius: "5px",
-          backgroundColor: "#042441",
+          backgroundColor: "var(--blue-color)",
           flexGrow: 1,
           "& .MuiOutlinedInput-root": {
             height: "46px",
             borderRadius: "5px",
-            color: "#fff",
-            fontSize: "18px",
+            color: "var(--beige-color)",
+            fontSize: "14px",
             "& fieldset": {
-              borderColor: "#09aea9",
+              borderColor: "var(--light-blue-color)",
+              fontSize: "14px",
             },
             "&:hover fieldset": {
-              borderColor: "#09aea9",
+              borderColor: "var(--light-blue-color)",
               outline: "none",
+              fontSize: "14px",
             },
             "&.Mui-focused fieldset": {
-              borderColor: "#09aea9",
+              borderColor: "var(--light-blue-color)",
               outline: "none",
             },
           },
           "& .MuiInputLabel-root": {
-            color: "#f6f4f2",
-            fontSize: "16px",
+            color: "var(--beige-color)",
+            fontSize: "10px",
             textTransform: "uppercase",
             fontWeight: "400",
           },
@@ -69,11 +70,10 @@ const Search = () => {
         type="submit"
         variant="contained"
         sx={{
-          color: "#fff",
-          background:
-            "linear-gradient(180deg, rgba(11,107,158,1) 0%, rgba(11,237,210,1) 100%)",
+          color: "var(--beige-color)",
+          background: "var(--gradient)",
           height: "46px",
-          fontWeight: "700",
+          fontWeight: "400",
           "&:hover": {
             background:
               "rgb(11,107,158) linear-gradient(299deg, rgba(11,107,158,1) 0%, rgba(11,237,210,1) 100%)",

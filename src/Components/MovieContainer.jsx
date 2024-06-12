@@ -4,6 +4,7 @@ import getMovie from "../Apis/getMovie";
 import Movie from "./Movie";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
 const MovieContainer = ({ searchText }) => {
   const [movies, setMovies] = useState([]);
@@ -13,7 +14,7 @@ const MovieContainer = ({ searchText }) => {
     const fetchMovies = async () => {
       try {
         const data = await getMovie(searchText);
-        setMovies(data.Search);
+        setMovies(data.Search || []);
       } catch (err) {
         setError(err.message);
       }
@@ -22,8 +23,8 @@ const MovieContainer = ({ searchText }) => {
   }, [searchText]);
 
   return (
-    <Container maxWidth="lg">
-      {error && <p>{error}</p>}
+    <Container maxWidth="lg" sx={{ paddingBottom: "60px" }}>
+      {error && <Typography variant="body1" color="error">{error}</Typography>}
       <Grid container spacing={2}>
         {movies.length > 0 ? (
           movies.map((movie) => (
@@ -32,7 +33,11 @@ const MovieContainer = ({ searchText }) => {
             </Grid>
           ))
         ) : (
-          <p>No movies found</p>
+          <Grid item xs={12}>
+            <Typography variant="body1" sx={{ color: "var(--beige-color)" }}>
+              No movies found
+            </Typography>
+          </Grid>
         )}
       </Grid>
     </Container>

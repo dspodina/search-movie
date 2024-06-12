@@ -34,8 +34,8 @@ const Movie = ({ movie }) => {
               height: "28px",
               minWidth: "28px",
               borderRadius: "7px",
-              background: "#10b6e0",
-              color: "#fff",
+              background: "var(--light-blue-color)",
+              color: "var(--beige-color)",
               padding: "20px",
               margin: "10px",
               top: "10px",
@@ -72,9 +72,9 @@ const Movie = ({ movie }) => {
         <Typography
           variant="body1"
           color="text.secondary"
-          sx={{ fontSize: "13px", marginBottom: "5px" }}
+          sx={{ fontSize: "14px", marginBottom: "5px" }}
         >
-          Release date: {movie.Year}
+          {movie.Year}
         </Typography>
       </CardContent>
     </Card>

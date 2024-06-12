@@ -14,7 +14,7 @@ const Header = ({ title }) => {
           alignItems: "center",
           gap: 2,
           justifyContent: "space-between",
-          margin: "40px 0 60px",
+          margin: "40px 0 100px",
         }}
       >
         <Typography
