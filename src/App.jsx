@@ -41,7 +41,7 @@ function App() {
           { searchText }
         </Divider>
         <MovieContainer searchText={searchText} />
-        <Footer footerText="Junior Full Stack Developer ©2024" />
+        <Footer footerText="Junior Full Stack Developer  © Spodina Daria" />
       </div>
     </SearchContext.Provider>
   );
